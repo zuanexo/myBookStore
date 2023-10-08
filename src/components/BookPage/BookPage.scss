@@ -1,0 +1,21 @@
+.bookPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+
+  &-column {
+    max-width: 900px;
+  }
+  &-imgDiv {
+    object-fit: contain;
+    img {
+      max-width: 500px;
+    }
+  }
+  &-addToCart {
+    transform: scale(1.5);
+    margin-block: 25px;
+    padding: 10px 15px;
+  }
+}

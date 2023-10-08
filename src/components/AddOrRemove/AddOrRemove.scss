@@ -1,0 +1,31 @@
+.addRemove {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  &-button {
+    width: 70px;
+    border: 1px solid;
+    border-color: rgb(107, 107, 107);
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+
+    & > div {
+      width: 33.3%;
+      background-color: rgb(187, 187, 187);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+.fadeClick {
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
