@@ -24,6 +24,10 @@ export default function BookStore() {
     dispatch(getBooksAsync(filter))
   }, [filter.sort])
 
+  useEffect(() => {
+    document.title = "myBookStore: Browse"
+  }, [])
+
   return (
     <>
       <div className="bookStore d-flex flex-column align-items-center">

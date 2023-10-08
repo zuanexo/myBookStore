@@ -16,7 +16,11 @@ export default function BookPage() {
   }, [book])
 
   const author = authors.find((a) => a.id == book?.authorId)
-  console.log({ book })
+
+  useEffect(() => {
+    document.title = "myBookStore: " + book?.title
+  }, [book?.title])
+
   return (
     <div className="bookPage">
       <div className="bookPage-column border d-flex flex-column flex-md-row w-100">

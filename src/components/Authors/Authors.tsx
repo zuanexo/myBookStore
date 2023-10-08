@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Navigation from "../navbar"
 import { Accordion, Container, Row } from "react-bootstrap"
 import { useSelector } from "react-redux"
@@ -13,6 +13,10 @@ export default function Authors() {
       books: books.filter((book) => book.authorId == author.id),
     }
   })
+  useEffect(() => {
+    document.title = "myBookStore: Authors"
+  }, [])
+
   return (
     <>
       <div className="authors d-flex flex-column align-items-center">
