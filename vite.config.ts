@@ -11,6 +11,7 @@ export default defineConfig({
     outDir: "build",
     sourcemap: true,
   },
+  base: "/myBookStore/",
   test: {
     globals: true,
     environment: "jsdom",
