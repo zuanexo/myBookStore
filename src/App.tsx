@@ -9,7 +9,7 @@ import BookPage from "./components/BookPage/BookPage"
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.DEV ? '/' : '/myBookStore/'}>
       <Navigation />
       <Routes>
         <Route index element={<Home />} />
