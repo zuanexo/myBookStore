@@ -15,7 +15,7 @@ export default function BookCard({
   return (
     <Card
       as={"a"}
-      href={`/book/${book.id}`}
+      href={`book/${book.id}`}
       onClick={(e) => {
         e.preventDefault()
         navigate(`/book/${book.id}`)

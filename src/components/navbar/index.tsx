@@ -58,13 +58,13 @@ export default function Navigation() {
   return (
     <Navbar expand="lg" className="bg-warning-subtle">
       <Container>
-        <Navbar.Brand href="#home">theBookStore:</Navbar.Brand>
+        <Navbar.Brand href="home">theBookStore:</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav activeKey={pathname} className="ms-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/books">Books</Nav.Link>
-            <Nav.Link href="/authors">Authors</Nav.Link>
+            <Nav.Link href="home">Home</Nav.Link>
+            <Nav.Link href="books">Books</Nav.Link>
+            <Nav.Link href="authors">Authors</Nav.Link>
             {!!accessToken ? (
               <>
                 <Nav.Link

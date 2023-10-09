@@ -35,7 +35,7 @@ export default function Home() {
                 return (
                   <Carousel.Item
                     key={value.id}
-                    href={`/book/${value.id}`}
+                    href={`book/${value.id}`}
                     as={"a"}
                   >
                     <img
