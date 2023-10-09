@@ -11,7 +11,7 @@ export default defineConfig({
     outDir: "build",
     sourcemap: true,
   },
-  base: "/myBookStore/",
+  base: "https://zuanexo.github.io/myBookStore/",
   test: {
     globals: true,
     environment: "jsdom",
