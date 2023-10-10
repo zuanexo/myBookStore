@@ -10,8 +10,8 @@ import Integral from "./components/Integral/Integral"
 
 function App() {
   return (
-    <BrowserRouter basename={import.meta.env.DEV ? '/' : '/myBookStore/'}>
-      <Navigation />
+    <BrowserRouter basename={import.meta.env.DEV ? "/" : "/myBookStore/"}>
+      {/* <Navigation /> */}
       <Routes>
         <Route index element={<Home />} />
         <Route path="/books" element={<BookStore />} />
