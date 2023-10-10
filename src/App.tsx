@@ -6,6 +6,7 @@ import BookStore from "./components/bookStore/BookStore"
 import Authors from "./components/Authors/Authors"
 import Navigation from "./components/navbar"
 import BookPage from "./components/BookPage/BookPage"
+import Integral from "./components/Integral/Integral"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/books" element={<BookStore />} />
         <Route path="/book/:bookId" element={<BookPage />} />
         <Route path="/authors" element={<Authors />} />
+        <Route path="/integral" element={<Integral />} />
         <Route path="*" element={<Navigate replace to={"/"} />} />
       </Routes>
     </BrowserRouter>
