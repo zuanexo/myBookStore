@@ -11,7 +11,7 @@ import Integral from "./components/Integral/Integral"
 function App() {
   return (
     <BrowserRouter basename={import.meta.env.DEV ? "/" : "/myBookStore/"}>
-      {/* <Navigation /> */}
+      {!window?.location?.pathname.includes("integral") ? <Navigation /> : null}
       <Routes>
         <Route index element={<Home />} />
         <Route path="/books" element={<BookStore />} />
